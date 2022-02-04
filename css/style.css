@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #3f3f3f;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  background: url(../assets/images/background.jpg) no-repeat center center /
+    cover;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 5px 0px 50px 20px;
+}
+
+.header-container {
+  padding: 2px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.header-container a img {
+  width: 130px;
+}
+.header-container .btn {
+  text-decoration: none;
+  align-items: center;
+  background: rgb(248, 7, 7);
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 2px;
+  position: relative;
+  font-size: 15px;
+}
+.text1 {
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  padding-top: 120px;
+  position: relative;
+  z-index: 2;
+}
+.text1 h1 {
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.text1 h2 {
+  font-weight: 350;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.text1 p {
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+form input {
+  border: none;
+  padding: 10px;
+  width: 500px;
+  font-family: "Poppins";
+  margin-top: 10px;
+  outline: none;
+}
+
+.btn2 {
+  position: relative;
+  border: none;
+  background: rgb(248, 7, 7);
+  color: #fff;
+  padding: 9px 30px;
+  right: 10px;
+  top: 1.1px;
+  font-size: 15px;
+  font-family: "Poppins";
+  border-radius: 0px 2px 2px 0px;
+  cursor: pointer;
+}
+
+.login-container {
+  position: relative;
+  z-index: 2;
+  background: #0000007a;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  padding: 10px 30px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.textheader h1 {
+  color: #fff;
+  padding: 10px 0px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input {
+  color: #fff;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  background: #3d3d3d;
+  border-radius: 3px;
+}
+
+.inputs .btn {
+  margin-top: 30px;
+  padding: 10px;
+  background: #f80707;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  font-family: "Poppins";
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.inputs p {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.Signupnow {
+  color: #fff;
+  opacity: 1;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .text1 h1 {
+    font-weight: 600;
+    font-size: 35px;
+  }
+  .text1 h2 {
+    font-weight: 350;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .text1 p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  form input {
+    border: none;
+    padding: 10px;
+    width: 200px;
+    font-family: "Poppins";
+    margin-top: 10px;
+    outline: none;
+  }
+
+  .btn2 {
+    position: relative;
+    border: none;
+    background: rgb(248, 7, 7);
+    color: #fff;
+    padding: 9px 15px;
+    right: 10px;
+    top: 1.1px;
+    font-size: 15px;
+    font-family: "Poppins";
+    border-radius: 0px 2px 2px 0px;
+    cursor: pointer;
+  }
+}
